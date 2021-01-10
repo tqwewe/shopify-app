@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"strictNullChecks": false,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"outDir": "lib",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noImplicitAny": false,
+		"lib": ["es2017", "dom"],
+		"types": ["node"]
+	},
+	"include": ["src"]
+}
