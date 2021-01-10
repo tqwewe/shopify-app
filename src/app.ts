@@ -160,7 +160,7 @@ export default class App {
 				...Object.entries(this.settings.routes.webhooks).reduce(
 					(acc, [route, fn]) => ({
 						...acc,
-						[route]: [
+						[`/hook/${route}`]: [
 							receiveWebhook({ secret: process.env.SHOPIFY_API_SECRET_KEY }),
 							fn,
 						],
